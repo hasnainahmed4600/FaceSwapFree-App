@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WevViewController">
+            <connections>
+                <outlet property="indicator" destination="5" id="8"/>
+                <outlet property="view" destination="1" id="3"/>
+                <outlet property="web" destination="JS0-CD-q8n" id="Ltm-iS-33C"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="bg_swap.png" translatesAutoresizingMaskIntoConstraints="NO" id="6">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                </imageView>
+                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JS0-CD-q8n">
+                    <rect key="frame" x="0.0" y="44" width="414" height="692"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <wkWebViewConfiguration key="configuration">
+                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                        <wkPreferences key="preferences"/>
+                    </wkWebViewConfiguration>
+                </wkWebView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="5">
+                    <rect key="frame" x="197" y="358" width="20" height="20"/>
+                </activityIndicatorView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9">
+                    <rect key="frame" x="20" y="35" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="WnG-BA-Ecm"/>
+                        <constraint firstAttribute="height" constant="35" id="xl7-YQ-Hcx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" backgroundImage="btn_back.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="backButtonClick:" destination="-1" eventType="touchUpInside" id="10"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="JS0-CD-q8n" secondAttribute="trailing" id="3dX-ea-sIh"/>
+                <constraint firstAttribute="bottom" secondItem="JS0-CD-q8n" secondAttribute="bottom" id="BGa-sW-g3d"/>
+                <constraint firstAttribute="trailing" secondItem="6" secondAttribute="trailing" id="FjH-Qn-2YV"/>
+                <constraint firstItem="JS0-CD-q8n" firstAttribute="top" secondItem="1" secondAttribute="top" constant="44" id="H4s-lu-B2N"/>
+                <constraint firstItem="5" firstAttribute="centerY" secondItem="1" secondAttribute="centerY" id="OLb-bh-z0r"/>
+                <constraint firstItem="6" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="Odj-qK-ctO"/>
+                <constraint firstItem="9" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="SGo-qo-aGN"/>
+                <constraint firstAttribute="bottom" secondItem="6" secondAttribute="bottom" id="VNl-hL-5FC"/>
+                <constraint firstItem="9" firstAttribute="top" secondItem="1" secondAttribute="top" constant="35" id="VdU-5z-sAj"/>
+                <constraint firstItem="5" firstAttribute="centerX" secondItem="1" secondAttribute="centerX" id="YZp-M1-Rae"/>
+                <constraint firstItem="6" firstAttribute="top" secondItem="1" secondAttribute="top" id="oFW-tY-opb"/>
+                <constraint firstItem="JS0-CD-q8n" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="tPb-Jm-yDz"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="105.97826086956522"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_swap.png" width="640" height="1136"/>
+        <image name="btn_back.png" width="75" height="75"/>
+    </resources>
+</document>

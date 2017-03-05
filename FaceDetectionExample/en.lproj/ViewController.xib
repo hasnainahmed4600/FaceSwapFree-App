@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="bannerView" destination="mQg-Tm-XaJ" id="fwA-uU-g6F"/>
+                <outlet property="customBanner" destination="mal-2Q-KWy" id="cua-DX-FII"/>
+                <outlet property="view" destination="6" id="7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="6">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="bg_homepage.png" translatesAutoresizingMaskIntoConstraints="NO" id="32">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36">
+                    <rect key="frame" x="359" y="35" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="JXY-Cy-Doc"/>
+                        <constraint firstAttribute="width" constant="35" id="S2i-o6-BHK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" backgroundImage="btn-info.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="infoButtonClick:" destination="-1" eventType="touchUpInside" id="41"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35">
+                    <rect key="frame" x="265" y="557" width="56" height="49"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="56" id="LfM-sG-RiS"/>
+                        <constraint firstAttribute="width" secondItem="35" secondAttribute="height" multiplier="8:7" id="YXa-P9-F0u"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" backgroundImage="btn-camera.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="takeImageButtonClick:" destination="-1" eventType="touchUpInside" id="39"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33">
+                    <rect key="frame" x="93" y="557" width="56" height="49"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="33" secondAttribute="height" multiplier="8:7" id="BKa-jv-ZRy"/>
+                        <constraint firstAttribute="width" constant="56" id="jn5-zs-wFD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" backgroundImage="btn-gallery.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="takeImageButtonClick:" destination="-1" eventType="touchUpInside" id="37"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34">
+                    <rect key="frame" x="179" y="557" width="56" height="49"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="56" id="3X5-9d-vx2"/>
+                        <constraint firstAttribute="width" secondItem="34" secondAttribute="height" multiplier="8:7" id="NhU-u8-Lvo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" backgroundImage="noads.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="takeImageButtonClick:" destination="-1" eventType="touchUpInside" id="38"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mQg-Tm-XaJ" customClass="GADBannerView">
+                    <rect key="frame" x="47" y="686" width="320" height="50"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="dnQ-cd-iLc"/>
+                        <constraint firstAttribute="height" constant="50" id="kSd-eA-4OO"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="JzD-C4-S53"/>
+                    </connections>
+                </view>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mal-2Q-KWy">
+                    <rect key="frame" x="47" y="691" width="320" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <state key="normal" image="banner.png"/>
+                    <connections>
+                        <action selector="bannerClick:" destination="-1" eventType="touchUpInside" id="1o8-JK-jnZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.75" green="0.75" blue="0.75" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="32" firstAttribute="top" secondItem="6" secondAttribute="top" id="1lc-Wd-zzh"/>
+                <constraint firstItem="32" firstAttribute="leading" secondItem="6" secondAttribute="leading" id="1uq-bm-H07"/>
+                <constraint firstItem="35" firstAttribute="centerY" secondItem="34" secondAttribute="centerY" id="4FN-4s-rH0"/>
+                <constraint firstAttribute="bottom" secondItem="34" secondAttribute="bottom" constant="130" id="5fF-zm-K2k"/>
+                <constraint firstAttribute="trailing" secondItem="32" secondAttribute="trailing" id="7gD-1E-SO1"/>
+                <constraint firstAttribute="bottom" secondItem="32" secondAttribute="bottom" id="C8a-nD-4NW"/>
+                <constraint firstAttribute="bottom" secondItem="mQg-Tm-XaJ" secondAttribute="bottom" id="CPG-rc-xpj"/>
+                <constraint firstItem="32" firstAttribute="leading" secondItem="6" secondAttribute="leading" id="FCr-yn-nFP"/>
+                <constraint firstItem="35" firstAttribute="leading" secondItem="34" secondAttribute="trailing" constant="30" id="Hjj-3B-cUQ"/>
+                <constraint firstAttribute="bottom" secondItem="32" secondAttribute="bottom" id="Mat-fn-bBS"/>
+                <constraint firstAttribute="trailing" secondItem="32" secondAttribute="trailing" id="PVp-n5-hW9"/>
+                <constraint firstItem="32" firstAttribute="top" secondItem="6" secondAttribute="top" id="VNQ-04-dD5"/>
+                <constraint firstAttribute="trailing" secondItem="36" secondAttribute="trailing" constant="20" id="cJu-83-2h4"/>
+                <constraint firstItem="34" firstAttribute="leading" secondItem="33" secondAttribute="trailing" constant="30" id="cX2-ag-Xna"/>
+                <constraint firstItem="36" firstAttribute="top" secondItem="6" secondAttribute="top" constant="35" id="fYb-HC-aUK"/>
+                <constraint firstItem="mQg-Tm-XaJ" firstAttribute="centerX" secondItem="6" secondAttribute="centerX" id="tSq-t1-UyU"/>
+                <constraint firstItem="34" firstAttribute="centerX" secondItem="6" secondAttribute="centerX" id="xdZ-Ep-1EE"/>
+                <constraint firstItem="33" firstAttribute="centerY" secondItem="34" secondAttribute="centerY" id="yDy-o1-S4H"/>
+            </constraints>
+            <point key="canvasLocation" x="360.86956521739131" y="303.26086956521743"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="banner.png" width="1100" height="120"/>
+        <image name="bg_homepage.png" width="640" height="1136"/>
+        <image name="btn-camera.png" width="112" height="97"/>
+        <image name="btn-gallery.png" width="112" height="97"/>
+        <image name="btn-info.png" width="51" height="51"/>
+        <image name="noads.png" width="112" height="97"/>
+    </resources>
+</document>
